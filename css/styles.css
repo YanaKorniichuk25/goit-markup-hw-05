@@ -618,7 +618,10 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window-close:hover,
+.modal-window-close:hover {
+  background-color: #404bbf;
+  border: none;
+}
 .modal-window-close:focus {
   background-color: #404bbf;
   border: none;
@@ -630,7 +633,9 @@ img {
 
 /* для плавної зміни кольору */
 
-.modal-window-close:hover .modal-window-close-svg,
+.modal-window-close:hover .modal-window-close-svg {
+  fill: #ffffff;
+}
 .modal-window-close:focus .modal-window-close-svg {
   fill: #ffffff;
 }
@@ -773,7 +778,9 @@ img {
   color: #4d5ae5;
 }
 
-input[type='checkbox']:checked + label > span {
+.modal-form-checkbox-input:checked
+  + .modal-form-checkbox-label
+  .modal-form-checkbox-label-span {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
