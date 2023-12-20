@@ -1,7 +1,18 @@
+/*
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}*/
+:root {
+  --items: 4;
+  --row-gap: 48px;
+  --column-gap: 24px;
+}
+
+/* #region: normalize */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
